@@ -42,7 +42,6 @@ export default function useScreenShareToggle() {
               track.stop();
               setIsSharing(false);
             };
-
             track.onended = stopScreenShareRef.current;
             setIsSharing(true);
           })
